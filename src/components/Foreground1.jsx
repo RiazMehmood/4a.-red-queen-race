@@ -2,24 +2,11 @@ import useWebAnimations from '@wellyshen/use-web-animations';
 import React from 'react';
 
 
-export const Foreground1 = () => {
+export const Foreground1 = (props) => {
+
+const foreground1 = props.foreground1;
 
 
-const sceneryFrames =   [
-  { transform: 'translateX(100%)' },
-  { transform: 'translateX(-100%)' }   
-];
-
-
-const sceneryTimingForeground = {
-  duration: 12000,
-  iterations: Infinity
-};
-
-const foreground1 = useWebAnimations({
-  keyframes: sceneryFrames,
-  timing: sceneryTimingForeground,
-})
     return (
         <div>
       <div className="scenery" id="foreground1" ref={foreground1.ref}>
