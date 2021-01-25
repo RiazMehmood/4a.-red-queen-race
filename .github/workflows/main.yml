@@ -35,14 +35,14 @@ jobs:
 
       # Install WAAPI
       - name: Install webanimation
-        run: npm install @wellyshen/use-web-animations  
-
+        run: sudo chown -R $USER /usr/local/lib/node_modules
+        run: npm install --global @wellyshen/use-web-animations  
+      
       # Build React App With Yarn
       - name: Build React App
         run: yarn build
-       
-       
-     # Install Surge
+
+      # Install Surge
       - name: Install Surge
         run: npm install --global surge
          
