@@ -38,7 +38,7 @@ jobs:
         run: sudo chown -R $USER /usr/local/lib/node_modules
 
       - name: Install WAAPI
-        run: npm install --global @wellyshen/use-web-animations  
+        run: npm install --save --global @wellyshen/use-web-animations  
       
       # Build React App With Yarn
       - name: Build React App
