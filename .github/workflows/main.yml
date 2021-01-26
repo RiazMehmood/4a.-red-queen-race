@@ -32,13 +32,6 @@ jobs:
       - uses: Borales/actions-yarn@v2.3.0
         with:
           cmd: install
-
-      # Install WAAPI
-      - name: SUDO privilages to web animations
-        run: sudo chown -R $USER /usr/local/lib/node_modules
-
-      - name: Install WAAPI
-        run: npm install --save --global @wellyshen/use-web-animations  
       
       # Build React App With Yarn
       - name: Build React App
